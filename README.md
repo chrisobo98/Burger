@@ -88,7 +88,6 @@ connected as id 15
 
      * Created a button in `index.handlebars` that will submit the user input into the database.
      
-## Heroku hosting coming soon
      
 ## Built With
 
