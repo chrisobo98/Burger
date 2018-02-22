@@ -1,6 +1,6 @@
 # Burger
 Burger logger with MySQL, Node, Express, Handlebars and a homemade ORM
-
+![Screenshot](burger.png)
 
 ### Prerequisites
 
@@ -15,6 +15,8 @@ npm install mysql
 
 - Navigate to Burger/config/connection.js folder and set the password to create a MySQL connection. 
 
+![Screenshot](pass.png)
+
 ```
 var connection = mysql.createConnection({
   host: "localhost",
@@ -24,9 +26,7 @@ var connection = mysql.createConnection({
 });
 ```
 
-- Open the db folder and import schema.sql & seeds.sql into mysql workbench
-
-- Finally 
+- Open the db folder and import schema.sql & seeds.sql into mysql workbench then connect
 
 ```
 $ node server.js
@@ -39,7 +39,11 @@ connected as id 15
 
 - Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
+![Screenshot](eat.png)
+
 - Your app will store every burger in a database, whether devoured or not.
+
+![Screenshot](newbur.png)
 
 ## Burger Database Setup
 
@@ -63,7 +67,10 @@ connected as id 15
 ## Model Setup
 
 * /models/burger.js *
+
 - inside is the code that will call the ORM functions using burger specific input for the ORM.
+
+![Screenshot](js.png)
 
 ## Controller Setup
 
